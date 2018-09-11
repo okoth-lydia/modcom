@@ -20,9 +20,9 @@ class Fish():
 
 #  Trout inherits from Fish
 #fish is a parent class -
-class Trout(Fish):
+class Trout(Fish):  #IS A - Relationship
     pass
 
-object = Fish("Tuna", 54, 3)
+object = Trout("Trout", 54, 3)
 
 object.jump()
