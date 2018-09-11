@@ -21,8 +21,10 @@ class Fish():
 #  Trout inherits from Fish
 #fish is a parent class -
 class Trout(Fish):  #IS A - Relationship
-    pass
+
+    def singing(self):
+        print("a trout can sing")
 
 object = Trout("Trout", 54, 3)
 
-object.jump()
+object.singing()
