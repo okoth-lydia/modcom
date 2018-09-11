@@ -19,12 +19,32 @@ class Fish():
         print("look it just jumped")
 
 #  Trout inherits from Fish
-#fish is a parent class -
-class Trout(Fish):  #IS A - Relationship
+#  fish is a parent class -
 
+
+class Trout(Fish):  #  IS A - Relationship
     def singing(self):
         print("a trout can sing")
 
-object = Trout("Trout", 54, 3)
 
+class Shark(Fish):
+    def eat(self):
+        print("Sharks eat anything literally")
+
+#inherits from Trout/ Fish
+
+class Omena(Trout):
+    def small_size(self):
+        print("it's very small")
+
+# create a class BrownFish that extends Omena class
+
+class BrownFish(Omena):
+    def guggle(self):
+        print("I can guggle")
+
+
+
+object = BrownFish("BrownFish", 56, 8)
 object.singing()
+
