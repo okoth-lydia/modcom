@@ -50,6 +50,9 @@ class Account:
 
 #  we create the account object and provide the states
 
+    def changebranch(self, newbranch):
+        self.branch = newbranch
+
 object = Account(name="miss lee",
                  balance=200,
                  branch="Rongai",
@@ -61,3 +64,4 @@ object.deposit(dep_ammount=2000)
 object.withdraw(amount=800)
 #object.checkbal()
 object.checkdetails()
+object.changebranch("Nairobi")
