@@ -18,6 +18,11 @@ class Fish():
     def jump(self):
         print("look it just jumped")
 
+#  Trout inherits from Fish
+#fish is a parent class -
+class Trout(Fish):
+    pass
+
 object = Fish("Tuna", 54, 3)
 
 object.jump()
