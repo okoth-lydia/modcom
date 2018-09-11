@@ -17,3 +17,7 @@ class Fish():
 
     def jump(self):
         print("look it just jumped")
+
+object = Fish("Tuna", 54, 3)
+
+object.jump()
