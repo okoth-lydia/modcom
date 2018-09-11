@@ -37,6 +37,11 @@ class Omena(Trout):
     def small_size(self):
         print("it's very small")
 
+#  method overriding
+    def swim(self):
+        print("shhhhhhhhhh")
+
+
 # create a class BrownFish that extends Omena class
 
 class BrownFish(Omena):
@@ -45,6 +50,6 @@ class BrownFish(Omena):
 
 
 
-object = BrownFish("BrownFish", 56, 8)
-object.singing()
+object = Omena("BrownFish", 56, 8)
+object.swim()
 
