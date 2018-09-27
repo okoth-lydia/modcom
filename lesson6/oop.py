@@ -53,7 +53,15 @@ class Account:
     def changebranch(self, newbranch):
         self.branch = newbranch
 
-object = Account(name="miss lee",
+class LoanAccount(Account):
+    def __init__(self, occupation, salary, accno):
+        self.occupation = occupation
+        self.salary = salary
+        self.accno = accno
+
+    def getLoan(self):
+
+        object = LoanAccount(name="miss lee",
                  balance=200,
                  branch="Rongai",
                  type= "personal",
@@ -63,5 +71,36 @@ object = Account(name="miss lee",
 object.deposit(dep_ammount=2000)
 object.withdraw(amount=800)
 #object.checkbal()
+object.changebranch("Nairobi")`
 object.checkdetails()
-object.changebranch("Nairobi")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
